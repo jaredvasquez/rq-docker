@@ -26,3 +26,5 @@ make kill-stack
 ```
 
 The dashboard can be viewed by visiting `http://localhost:9181`
+
+![Dashboard Screenshot](screenshots/dashboard.png)

@@ -11,7 +11,7 @@ latest:
 	docker build -t ${IMAGE}:latest .
 
 deploy-stack:
-	docker stack deploy --compose-file docker-compose.yml ${STACK}
+	docker stack deploy --compose-file rq-docker/docker-compose.yml ${STACK}
 
 kill-stack:
 	docker stack rm ${STACK}
