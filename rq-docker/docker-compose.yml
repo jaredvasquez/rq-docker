@@ -8,7 +8,7 @@ services:
 
   rq-worker:
     image: jaredv/rq-docker:0.0.1
-    command: rq worker -u redis://rq-server:6379
+    command: rq worker -u redis://rq-server:6379 high normal low
     deploy:
       replicas: 5
 
