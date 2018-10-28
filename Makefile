@@ -5,7 +5,7 @@ STACK='rq-stack'
 build-and-deploy: image deploy-stack
 
 image:
-	docker build -t ${IMAGE}:${TAG} .
+	docker build -t ${IMAGE}:${TAG} rq-docker/
 
 latest:
 	docker build -t ${IMAGE}:latest .
